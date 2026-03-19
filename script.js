@@ -1,4 +1,11 @@
 let cart = [];
+const savedCart = localStorage.getItem("cart");
+if (savedCart) {
+    cart = JSON.parse(savedCart);
+}
+function saveToLocalStorage() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 function addToCart(name, price, category) {
     let found = false;
@@ -12,7 +19,7 @@ function addToCart(name, price, category) {
     if (!found) {
         cart.push({ name: name, price: Number(price), category: category, count: 1 });
     }
-   
+    saveToLocalStorage();
     show();
 }
 
@@ -43,11 +50,13 @@ function calculateTotal() {
 
 function del(index) {
     cart.splice(index, 1);
+    saveToLocalStorage();
     show();
 }
 
 const clearCart = () => {
     cart = [];
+    saveToLocalStorage();
     show();
 };
 
@@ -58,6 +67,7 @@ const pay = () => {
     } else {
         alert("Оплата прошла успешно!");
         cart = [];
+        saveToLocalStorage();
         show();
     }
 };
