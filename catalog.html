@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Каталог цветов</title>
+</head>
+<body>
+    <p id="menu"><b>Меню</b></p>
+    <ul class="Menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+    </ul>
+
+    <hr>
+
+    <h1>Каталог цветов</h1>
+
+    <div class="filter">
+        <label>Фильтр по цене:</label>
+        <select id="filter-price">
+            <option value="all">Все товары</option>
+            <option value="low">80-150 р</option>
+            <option value="medium">151-200 р</option>
+            <option value="high">201-300 р</option>
+        </select>
+    </div>
+
+    <div class="product" data-name="Розы" data-price="150" data-category="Розы">
+        <h2>Розы</h2>
+        <img src="images1/rose.WEBP" height="200" width="200">
+        <p>Цена: 150 р (за штуку)</p>
+        <p><a href="rose.html" class="catalog">Информация о розах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Пионы" data-price="300" data-category="Пионы">
+        <h2>Пионы</h2>
+        <img src="images1/pion.WEBP" height="200" width="200">
+        <p>Цена: 300 р (за штуку)</p>
+        <p><a href="pion.html" class="catalog">Информация о пионах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Гипсофилы" data-price="80" data-category="Гипсофилы">
+        <h2>Гипсофилы</h2>
+        <img src="images1/gip.WEBP" height="200" width="200">
+        <p>Цена: 80 р (за штуку)</p>
+        <p><a href="gip.html" class="catalog">Информация о гипсофилах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Лилии" data-price="180" data-category="Лилии">
+        <h2>Лилии</h2>
+        <img src="images1/lily.JPG" height="200" width="200">
+        <p>Цена: 180 р (за штуку)</p>
+        <p><a href="lily.html" class="catalog">Информация о лилиях</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Альстромерии" data-price="120" data-category="Альстромерии">
+        <h2>Альстромерии</h2>
+        <img src="images1/al.JPG" height="200" width="200">
+        <p>Цена: 120 р (за штуку)</p>
+        <p><a href="al.html" class="catalog">Информация об альстромериях</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Эустомы" data-price="190" data-category="Эустомы">
+        <h2>Эустомы</h2>
+        <img src="images1/eustoma.JPG" height="200" width="200">
+        <p>Цена: 190 р (за штуку)</p>
+        <p><a href="eustoma.html" class="catalog">Информация об эустомах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Хризантемы" data-price="110" data-category="Хризантемы">
+        <h2>Хризантемы</h2>
+        <img src="images1/chryzantema.JPG" height="200" width="200">
+        <p>Цена: 110 р (за штуку)</p>
+        <p><a href="chryzantema.html" class="catalog">Информация о хризантемах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Ромашки" data-price="100" data-category="Ромашки">
+        <h2>Ромашки</h2>
+        <img src="images1/romashki.JPG" height="200" width="200">
+        <p>Цена: 100 р (за штуку)</p>
+        <p><a href="romashki.html" class="catalog">Информация о ромашках</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Гортензии" data-price="250" data-category="Гортензии">
+        <h2>Гортензии</h2>
+        <img src="images1/gortenzia.JPG" height="200" width="200">
+        <p>Цена: 250 р (за штуку)</p>
+        <p><a href="gortenzia.html" class="catalog">Информация о гортензиях</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <div class="product" data-name="Ирисы" data-price="140" data-category="Ирисы">
+        <h2>Ирисы</h2>
+        <img src="images1/iris.JPG" height="200" width="200">
+        <p>Цена: 140 р (за штуку)</p>
+        <p><a href="iris.html" class="catalog">Информация об ирисах</a></p>
+        <button class="btn">Добавить в корзину</button>
+    </div>
+
+    <h3> Корзина</h3>
+    <div id="cart"></div>
+    <p class="sum">Итого: <span id="total">0</span>р</p>
+    <button class="clear">Очистить</button>
+    <button class="pay">Оплатить</button>
+
+    <hr>
+    
+    <footer>
+        <p>&copy; Все права защищены</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

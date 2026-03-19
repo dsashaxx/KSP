@@ -1,0 +1,135 @@
+body{
+    background-color: #e3ddd3;
+
+}
+#menu{
+    font-size: 22px;
+}
+.Menu {
+    list-style-type: none;
+    padding: 0 ;
+    display: flex; 
+    gap: 10px; 
+}
+.Menu li a {
+    color: rgb(71, 51, 34);  
+    background-color: rgb(202, 190, 175);     
+    font-size: 20px;                          
+    text-decoration: none;          
+    padding:10px;
+
+}
+.Menu li a:hover {
+    background-color: rgb(63, 55, 45);
+    color: white;
+}
+
+h2{
+    background-color: #cfc6b8;
+    font-weight: 400;
+    color:#3e1706;
+    font-size: 18px;
+}
+
+.first{
+    color:rgb(5, 3, 27);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.second{
+    color: rgb(27, 33, 38);         
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    
+}
+.spisok {
+    list-style-type: none;          
+    padding-left: 0;
+    background-color: rgb(250, 250, 245);
+    padding: 7px;
+}
+.spisok li {
+    background-image: url('images1/stars.png'); 
+    background-repeat: no-repeat;
+    padding-left: 20px;               
+    font-size: 15px;
+    color: #352d25;
+    line-height: 26px;
+}
+.catalog{
+    color:rgb(33, 23, 16)
+}
+
+.filter {
+    gap: 15px;
+    padding: 15px;
+    background: #ede4da;
+    border-radius: 8px;
+}
+
+.filter label {
+    font-weight: bold;
+    color:#1a0f11;
+    font-size: 16px;
+}
+
+.filter select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px #1a0f11;
+    font-size: 14px;
+    background: white;
+}
+
+
+#cart {
+    background: #e6c5cd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+#total {
+    color: #3e1706;
+    font-size: 24px;
+}
+
+
+.clear, .pay {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e1706;
+    background-color:#e6c5cd;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.product .btn {
+    background: #e6c5cd;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
